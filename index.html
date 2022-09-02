@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Medappl.com - online testovanie a príprava na prijímacie skúšky LFUK</title>
+    <meta name="description" content="Aplikácia na online testovanie a efektívnu prípravu na prijímacie skúšky na medicínu LFUK Bratislava 2020, lekárska fakulta, príprava, biológia, chémia">
+    <meta name="keywords" content="prijímačky, LFUK, príprava, testovanie, aplikácia, testy, medicína, skúšky, otestuj sa, biológia, chémia, doučovanie, Bratislava">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.ico">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" crossorigin="anonymous"></script>
+  </head>
+
+  <body class="container">
+    <h3 style="margin-top: 0.9em;">Medappl.com - Aplikácia na online testovanie a efektívnu prípravu na prijímacie skúšky na medicínu LFUK Bratislava</h3>
+    <div style="margin-top: 0.5em; margin-bottom: 0.5em;" class='btn-group' role="group">
+        <a href='{% url 'register' %}' class='btn btn-default btn-secondary disabled' tabindex='-1' aria-disabled='true'>Registrácia</a>
+        <a href='{% url 'login' %}' class='btn btn-default btn-success disabled' tabindex='-1' aria-disabled='true'>Prihlásiť</a></div>
+    <p> Vitajte na úvodnej stránke aplikácie medappl, ktorá bola naprogramovaná za účelom prípravy študentov na prijímacie konanie k študijným programom všeobecné a zubné lekárstvo LFUK. Aplikácia simuluje reálne prijímacie skúšky. Používateľ aplikácie má 90 minút na zodpovedanie 100 otázok z biológie a ďalších 90 minút na 100 otázok z chémie. Iba 4 z 8 odpovedí sú náhodne vybrané a po zodpovedaní každej otázky Vám aplikácia napíše, či ste odpovedali správne. Po dokončení skúšky získate ihneď presné bodové ohodnotenie. Maximálny počet bodov je 800, pričom 400 bodov môžete získať z biológie a 400 z chémie, presne tak, ako aj na reálnej skúške.</p><p> Aplikácia obsahuje celú databázu 3 000 otázok, 24 000 odpovedí a taktiež obsahuje druhý “trénovací” mód, pri ktorom je možné vybrať si štartovaciu otázku od ktorej chcete skúšku začať. <u>Aplikácia nie je náhradou za podklady na prijímacie skúšky</u> (zobrazuje náhodne iba 4 z 8 odpovedí), ale slúži iba ako pomôcka k efektívnejšej príprave. Je úplne zadarmo pre všetkých.</p>
+    <img src="assets/img/chem.jpg" alt="Medappl aplikácia" class="introimages"/>
+    <h5 style="margin-top: 0.9em;">Ako aplikácia funguje:</h5>		
+    <p> Pri móde 1 (skúškový mód) aplikácia náhodne vyberie otázku a náhodne vyberie 4 z 8 odpovedí, presne tak, ako to je na prijímacích skúškach. Pri móde 2 (trénovací mód) sa tiež náhodne vyberie 4 z 8 odpovedí, ale štartovacia otázka je voliteľná a ďalšie otázky nasledujú za sebou. Mód 2 je vhodný, ak sa chcete otestovať z konkrétnej časti prijímacích podkladov, napríklad zadáte štartovaciu otázku 650 a po zodpovedaní 100 otázok (650 - 750) sa Vám zobrazí bodové skóre, kde taktiež môžete získať maximum 400 bodov za každý predmet.</p>
+    <p> Medappl.com je webová aplikácia, takže ju netreba sťahovať, a dá sa používať aj na počítači aj na mobilnom zariadení. Na mobilnom zariadení bola optimalizovaná na chod v režime 'na šírku' (landscape mode) a dá ovládať pomocou tlačidiel “Správne” a “Nesprávne”. Na počítači sa dá okrem tlačidiel ovládať aj pomocou klávesnice. Pre správnu odpoveď treba stlačiť klávesu “A” a pre nesprávnu odpoveď klávesu “D”.</p>
+    <h5 style="margin-top: 0.9em;">Motivácia:</h5>		
+    <p> Ako predošlý úspešný absolvent prijímacích skúšok LFUK som sa rozhodol túto aplikáciu vytvoriť z dôvodu, aby sa mohli študenti efektívnejšie pripraviť na prijímacie skúšky a cielene odstraňovať svoje slabosti. Je vhodná pre všetkých uchádzačov na prijímačky na medicínu, ale hlavne pre tých, ktorým chýba možnosť byť niekým pravidelne testovaný. Nie každý uchádzač pochádza z rovnakého podporujúceho prostredia a mojou motiváciou k práci na tejto aplikácií bolo, aby každý uchádzač mal rovnaké možnosti kvalitne sa pripraviť na prijímacie skúšky.</p>
+    <p> Som autorom zdrojového kódu aplikácie. Aplikácia je úplne zadarmo. Všetkým Vám prajem úspešné testovanie a držím palce na prijímacích skúškach. </p>
+    <h5 style="margin-top: 0.9em;">Ďalšie projekty:</h5>
+    <p>Moje minulé aj budúce opensource projekty môžete sledovať na mojej <a href="https://github.com/curiexr">Github stránke</a>.</p>
+    <h5 style="margin-top: 0.9em;">Kontakt:</h5>
+    <p style="margin-bottom: 2.5em;"> Email: <a href="mailto:medicina.appl@gmail.com">medicina.appl@gmail.com</a></p>
+  </body>
+</html>
